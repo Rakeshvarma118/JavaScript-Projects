@@ -8,13 +8,31 @@
 
     //More consize way to write function expression
     //Arrow Function does not use function keyword 
+
+    // Before applying Arrow Function rules
+        let showmsg=()=>{console.log("Hey, Man!")}
         let addition=(a,b)=>{return a+b}
         let cube=(x)=>{return x*x*x}
         let largeNumber=(c,d)=>{ return c>d?("Larger Number is "+c):("Larger Number is "+d)}
+    
+    /* NOTE:-   
+        1.If function has only one line statement then ignore '{}'
+        2.If function has one line return statement then ignore '{}' & 'return'
+        3.If function has only one argument/parameter then ignore '()'
+    */
+       
+    // After applying Arrow Function rules
+        let showmsg1=()=>console.log("Hey, Man!")
+        let addition1=(a,b)=> a+b
+        let cube1=x=> x*x*x
+        let largeNumber1=(c,d)=> c>d?("Larger Number is "+c):("Larger Number is "+d)
     </script>
 </head>
 <body>
     <script>
+    // before applying Arrow Function rules
+        showmsg()
+
         let add=addition(4,7)
         console.log(add)
         
@@ -23,6 +41,17 @@
 
         let large=largeNumber(5,100)
         console.log(large)
+
+    // After applying Arrow Function rules
+
+        showmsg1()
+
+        let add1=addition1(4,7)
+        console.log(add1)
+        
+        console.log(cube1(9))
+
+        console.log(largeNumber1(5,100))
     </script>
 
 
