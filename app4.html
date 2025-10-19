@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take input from user</title>
+</head>
+<body>
+    <script>
+        var a=prompt("Enter a value: ")  //3 (given by user)
+        var b=prompt("Enter b value: ")  //5 (given by user)
+        var c=a+b                    
+        document.write("Sum is "+c)      //35 (b/c even user gave number prompt box reads as string)
+
+        var c=eval(a)+eval(b)
+        document.write("Sum is "+c)      //8
+    </script>
+</body>
+</html>
