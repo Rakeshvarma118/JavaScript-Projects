@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Approaches for Preparing Function</title>
+</head>
+<body>
+    <script>
+        //1.WITHOUT PARAMETER AND WITH RETURN STATEMENT
+            /*
+            When we don't use parameters:
+                if input values are not changing then we use this function. 
+                Or we can say if the business logic of the function uses same input values 
+                then we use this approach.
+            */
+        //Find area of the circle
+        
+        function findAreaOfCircle()
+        {
+            const PI=3.14159
+            var radius=5
+            var result=PI*radius*radius
+            return result
+        }
+
+        var a=findAreaOfCircle(3)
+        console.log(a)
+    </script>
+</body>
+</html>
