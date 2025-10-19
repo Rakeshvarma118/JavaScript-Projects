@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immediate Invoke Function Expression(IIFE)</title>
+    
+</head>
+<body>
+    //If you want to call a function only once then use this IIFE declarartion
+    // Basic thing we need to remember is '(PAF)();' 
+    <script>
+        ((a,b)=>{console.log(a+b)})
+        (10,5);
+
+        ((c,d)=>{console.log(c>d?(c-d):(d-c))})
+        (66,67);
+    </script>
+</body>
+</html>
