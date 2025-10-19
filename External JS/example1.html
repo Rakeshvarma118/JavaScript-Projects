@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JavaScript Example </title>
+    <script src="one.js"></script>
+    <script src="two.js"></script>
+</head>
+<body>
+    <script>
+        /* Make sure that calling functions are in script tag with in the body 
+           and called functions are in another file with extention .js, 
+           to link that .js file we use src attribute in script tag, which is written in head only.
+        */
+
+        var a=circleArea1(5)
+        console.log(a)
+
+        var b=circleArea2()
+        console.log(b)
+
+        circleArea3(5)
+
+        circleArea4()
+    </script>
+</body>
+</html>
