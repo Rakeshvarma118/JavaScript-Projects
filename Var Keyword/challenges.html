@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges With Var Keyword</title>
+    <script>
+        function doSomething(){
+            var age=21
+            console.log(age)   //21
+            var age=26             // Here var keyword allows redeclaration to age variable
+            console.log(age)   //26
+
+            var height=5.8
+            if(true){
+                var weight=65
+                console.log(height)  //5.8
+                console.log(weight)  //65
+            }
+
+            console.log(height)      //5.8
+            console.log(weight)      //65  weight is accessible here due to functional scoe of war
+        }
+
+
+    </script>
+</head>
+<body>
+    <script>
+        doSomething()
+        name="rakesh"           //variable hoising, declaration moved to top
+        console.log(name);
+        var name
+    </script>
+</body>
+</html>
