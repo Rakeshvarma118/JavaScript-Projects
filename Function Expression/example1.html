@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example for Function Expression</title>
+    <script>
+
+    //By using let keyword function can't be redeclared
+    //By using let keyword function can't be hoisted
+        let addition=function(a,b){return a+b}
+        let square=function(x){return x*x}
+        let areaOfCircle=function(r){
+            const PI=3.14   
+            return PI*r*r
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let add=addition(4,7)
+        console.log(add)
+        
+        let sqr=square(9)
+        console.log(sqr)
+
+        let area=areaOfCircle(5)
+        console.log(area)
+
+    </script>
+</body>
+</html>
