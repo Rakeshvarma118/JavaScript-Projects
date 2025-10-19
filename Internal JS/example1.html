@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal JavaScript Example</title>
+    <script>
+        //1.WITH PARAMETERS AND WITH RETURN STATAEMEENT
+        function circleArea1(r)
+        {
+            const PI=3.14
+            return PI*r*r
+        }
+
+        //2.WITHOUT PARAMETERS AND WITH RETURN STATAEMEENT
+        function circleArea2()
+        {
+            const PI=3.14
+            var r=5
+            return PI*r*r
+        }
+
+        //3.WITH PARAMETERS AND WITHOUT RETURN STATAEMEENT
+        function circleArea3(r)
+        {
+            const PI=3.14
+            console.log(PI*r*r)
+        }
+
+        //4.WITHOUT PARAMETERS AND WITHOUT RETURN STATAEMEENT
+        function circleArea4()
+        {
+            const PI=3.14
+            var r=5
+            console.log(PI*r*r)
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var a=circleArea1(5)
+        console.log(a)
+
+        var b=circleArea2()
+        console.log(b)
+
+        circleArea3(5)
+
+        circleArea4()
+    </script>
+</body>
+</html>
