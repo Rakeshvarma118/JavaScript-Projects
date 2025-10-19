@@ -9,11 +9,8 @@
     //More consize way to write function expression
     //Arrow Function does not use function keyword 
         let addition=(a,b)=>{return a+b}
-        let square=(x)=>{return x*x}
-        let areaOfCircle=(r)=>{
-            const PI=3.14   
-            return PI*r*r
-        }
+        let cube=(x)=>{return x*x*x}
+        let largeNumber=(c,d)=>{ return c>d?("Larger Number is "+c):("Larger Number is "+d)}
     </script>
 </head>
 <body>
@@ -21,11 +18,11 @@
         let add=addition(4,7)
         console.log(add)
         
-        let sqr=square(9)
-        console.log(sqr)
+        let cub=cube(9)
+        console.log(cub)
 
-        let area=areaOfCircle(5)
-        console.log(area)
+        let large=largeNumber(5,100)
+        console.log(large)
     </script>
 
 
