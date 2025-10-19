@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example for Function Expression</title>
+    <title>Example for Arrow Function</title>
     <script>
 
-    //By using let keyword function can't be redeclared
-    //By using let keyword function can't be hoisted
-        let addition=function(a,b){return a+b}
-        let square=function(x){return x*x}
-        let areaOfCircle=function(r){
+    //More consize way to write function expression
+    //Arrow Function does not use function keyword 
+        let addition=(a,b)=>{return a+b}
+        let square=(x)=>{return x*x}
+        let areaOfCircle=(r)=>{
             const PI=3.14   
             return PI*r*r
         }
@@ -31,13 +31,11 @@
 
 
 
-    <h3>Function Expression</h3>
-    <pre>To overcome the challenges of function declaration we use function expression 
+    <h3>Arrow Function</h3>
+    <pre>More consize way to write function expression.
+        Arrow Function does not use function keyword.  
          <u>syntax</u>
-         let functionName= function (parameter1,parameter2......){
-            //body
-            //return statement
-         }
+         let functionName= (parameter1,parameter2......)=>{}
     </pre>
 </body>
 </html>
