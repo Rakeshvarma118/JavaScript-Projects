@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIFE Example</title>
+</head>
+<body>
+    <script>
+        ((x,y,z)=>{console.log(x+y+z)})(10,20,30);
+
+        let validAge=(age=>age>18)(45);
+        console.log(validAge)
+
+    </script>
+</body>
+</html>
