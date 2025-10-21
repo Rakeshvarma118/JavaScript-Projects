@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested or Inner Function</title>
+</head>
+<body>
+   <script>
+        function BHK101(){
+            function hall(){console.log('This is hall of BHK101')}
+            function kitchen(){
+                console.log('This is kitchen of BHK101')
+                function poojaroom(){console.log('This is the poojaroom in kitchen of BHK101')}
+                poojaroom()
+            }
+            function bedroom(){console.log('This is bedroom of BHK101')}
+            hall();
+            kitchen();
+            bedroom();
+        }
+        BHK101()
+   </script> 
+</body>
+</html>

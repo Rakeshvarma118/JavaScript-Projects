@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function outerFunction(){
+            let count =5
+            function innerFunction(){
+                count++
+                return count
+            }
+            return innerFunction
+        }
+        let a=outerFunction()
+        console.log(a())
+        console.log(a())
+        console.log(a())
+        console.log(a())
+
+        /*
+            A closure happens when:
+            The inner function remembers the variable of the outer function,
+            Even after the outer function has finished.
+        */
+    </script>
+    <pre><b><u>A closure happens when:</u></b>
+            The inner function remembers the variable of the outer function,
+            Even after the outer function has finished.</pre>
+</body>
+</html>

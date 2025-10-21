@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average of Threee Subjects</title>
+</head>
+<body>
+    <script>
+        let x=5   //Global variable 
+        function average(c,java,python){
+            console.log('inside average ---> x=',x)
+            let y=20       //local variable to average function
+            function sum(c,java,python){
+                let z=15          // Local variable to sum function
+                console.log('inside sum --->x=',x,', y=',y,', z=',z)
+                return c+java+python
+            }
+            return sum(c,java,python)/3
+        }
+        console.log(average(1,3,6))
+    </script>
+</body>
+</html> 

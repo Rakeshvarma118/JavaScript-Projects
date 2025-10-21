@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function one(){
+            return 100
+        }
+        console.log(one)   // Here we are printing function one , Not calling because we didn't use ()
+        console.log(one())  // Here we are calling one function
+
+        let dupOne= one
+        console.log(dupOne())
+    </script>
+</body>
+</html>
