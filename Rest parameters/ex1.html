@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter Example</title>
+</head>
+<body>
+    <script>
+        /*
+        
+        The rest parameter also uses ..(three dots), but its purpose is different
+        It collects multiple arguments into a single array inside a function.
+
+        */
+
+        function showMarks(c,cpp,java){
+            console.log(c,cpp,java)
+        }
+        showMarks(21,20,23)
+
+        console.log('---------------------------------------------')
+
+        function showMarks(...subjects){
+            console.log(subjects)
+        }
+        showMarks(21,20,23)
+
+    </script>
+</body>
+</html>

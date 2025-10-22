@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function using Arrow Function Example</title>
+</head>
+<body>
+    <script>
+        /*
+        function sayWelcome(){
+            console.log(`Welcome to my session`)
+        }
+        function sayBye(){
+            console.log(`Thanks for attending my session`)
+        }
+        */
+
+        //let sayWelcome=()=> console.log(`Welcome to my session`)
+        //let sayBye=()=> console.log(`Thanks for attending my session`)
+        
+
+        function greet(wish1,name,wish2){
+            wish1()
+            console.log(`Hello,${name}`)
+            wish2()
+        }
+        //greet(sayWelcome,"James",sayBye)
+
+        greet(()=> console.log(`Welcome to my session`),"James",()=> console.log(`Thanks for attending my session`))
+    </script>
+</body>
+</html>
