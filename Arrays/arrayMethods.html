@@ -26,7 +26,37 @@
                 // add next two month names after mar-Apr1,Apr2
         months.splice(3,0,"Apr1","Apr2")
         console.log(months)
-                
+                // add another item in between 
+        months.splice(2,0,"Feb1")
+        console.log(months)   
+                // delete apr1,apr2
+        months.splice(4,2)
+        console.log(months)  
+                // delete feb1
+        months.splice(2,1)
+        console.log(months)
+                // delete Feb March and then add apr ,may
+        months.splice(1,2,"Apr","May","Jun")
+        console.log(months)
+
+        // slice()
+        let a=[1,2,3,4]
+        let b=a.slice(0,2)         //2 is excluded consider upto 1 index
+        console.log(b)
+
+        //sort() and reverse()
+        let numbers=[5,3,9,1,9]
+        console.log(numbers.sort())
+        console.log(numbers.reverse())
+
+        console.log(numbers.includes(1))   //checking item is exist or not
+
+        console.log(numbers.indexOf(9))    // gives index of item 
+
+        console.log(numbers.lastIndexOf(9)) // gives the last index of an item
+
+        console.log(numbers)
+        
 
     </script>
 </body>
