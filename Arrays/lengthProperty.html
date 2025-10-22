@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Property length</title>
+</head>
+<body>
+    <script>
+        let numbers=[20,40,32,90,10]
+        console.log(numbers.length)   // length property
+
+        //subtract 15 from each element
+
+        ///// 1.for loop
+        for(let i=0;i<numbers.length;i++){
+            numbers[i]=numbers[i]-15
+        }
+        console.log('Using for loop')
+        console.log(numbers)
+
+        ///// 2.for of loop
+        let nums=[20,40,32,90,10]
+        console.log('Using for of loop')
+        for(let num of nums){
+            num=num-15 
+            console.log(num)
+        }
+        
+        ///// 3.forEach loop
+        console.log('Using forEach loop')
+        numbers.forEach(
+            function(number){console.log(number)}
+        )
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

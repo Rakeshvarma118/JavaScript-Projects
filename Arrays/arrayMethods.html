@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Array Methods</title>
+</head>
+<body>
+    <script>
+        let cart=[]
+        cart.push(15)      // add item at end
+        cart.push(20)      
+        cart.unshift(10)   // add item at start
+        cart.unshift(5)    
+        console.log(cart)
+
+        cart.pop()         // remove item at end
+        cart.shift()       // remove item at start
+        console.log(cart)
+
+        //splice() --> splice(index, removedCount,ele1,ele2,......)
+        let months=[]
+                // add first 3 month names-Jan,Feb,Mar
+        months.splice(0,0,"Jan","Feb","Mar")
+        console.log(months)
+                // add next two month names after mar-Apr1,Apr2
+        months.splice(3,0,"Apr1","Apr2")
+        console.log(months)
+                
+
+    </script>
+</body>
+</html>
