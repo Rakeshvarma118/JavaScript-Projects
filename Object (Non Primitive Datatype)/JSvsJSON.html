@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in Js and JSON</title>
+</head>
+<body>
+    <script>
+        //JS --> quotes are optional for key in js and we can write string in single,double quotes as well as backtick
+        let user={name:'vedha',age:22,city:"Hyd"}
+
+        //JSON  --> double quotes are mandatory for key in json and we can write string only in double quotes.
+        let user1={"name":'"vedha"',"age":22,"city":"Hyd"}
+
+        //JSON.stringify()  --> used to convert JS object or value into JSON
+        let obj={name:'John',age:32,city:"Delhi"}
+        let jsonString=JSON.stringify(obj)
+        console.log(jsonString)
+
+    </script>
+</body>
+</html>

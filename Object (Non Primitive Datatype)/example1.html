@@ -9,18 +9,25 @@
     <script>
         let student={
             id         :501,
-            courses    :['Java','UI','DBMS'],
-            phoneNumber:['9876543210','8765432109'],
+            courses    :['Java','UI','DBMS'],                  // array
+            phoneNumber:['9876543210','8765432109'],           // array
             gender     :'male',
-            name       :{firstName:'Kohli',lastName:'Virat'},
+            name       :{firstName:'Kohli',lastName:'Virat'},  // object 
             mailid     :'virat@gmail.com',
             address    :{
                          hno:'8-111',
                          city:'Hyd',
                          pinCode:500507,
-                         location:{lat:10.12,long:15.36}
-                        }
+                         location:{lat:10.12,long:15.36}        // object
+                        },                                      // object
+            wish       :function(){
+                                console.log(`Welcome ${this.name}`) // this is used to access current object
+                                console.log(`Welcome ${this.name.firstName}`)
+                                console.log(`Welcome ${this.name.lastName}`)
+                            }
+
         }
+        student.wish()
         console.log(student)
     </script>
 </body>
