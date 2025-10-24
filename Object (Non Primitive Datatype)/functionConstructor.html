@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Constructor in javascript</title>
+</head>
+<body>
+    <script>
+        //1. Create a function
+        function one(){
+            console.log("Welcome to one function ")
+        }
+        one()
+        //2.Create method in javaScript
+        let myObject={
+            two:function(){
+                console.log("Welcome to two method")
+            }
+        }
+        myObject.two()
+
+
+        //3.FUNCTION CONSTRUCTOR-->CLASS IN JAVA/PYHTON
+        function Student(id,name,marks){
+            this.id=id
+            this.name=name
+            this.marks=marks
+        }
+         //Creating object for the Function constructor
+         let student1=new Student(101,"rakesh",455)
+                    console.log(student1.id)
+                    console.log(student1.name)
+                    console.log(student1.marks)
+                    console.log("----------")
+         let student2=new Student(102,'chandu',500)
+                    console.log(student2.id)
+                    console.log(student2.name)
+                    console.log(student2.marks)
+                    console.log("----------")
+         let student3=new Student(103,`praveen`,600)
+                    console.log(student3.id)
+                    console.log(student3.name)
+                    console.log(student3.marks) 
+    </script>
+</body>
+</html>

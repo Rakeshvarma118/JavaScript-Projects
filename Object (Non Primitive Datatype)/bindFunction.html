@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind Function</title>
+</head>
+<body>
+    <script>
+        let showData1=function(created,modified){
+                        console.log(`ID is ${this.id}, NAME is ${this.name}, CREATED DATE is ${created},MODIFIED DATE is ${modified}`)
+                        }
+        let course={
+            id:101,
+            name:"java",
+            
+        }
+        let newCourse=showData1.bind(course)
+        newCourse('11/10/2020','11/12/2021')
+    </script>
+</body>
+</html>

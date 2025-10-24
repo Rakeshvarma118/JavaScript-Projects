@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call function on Objects</title>
+</head>
+<body>
+    <script>
+        // WITHOUT CALL()
+        console.log("-------------------------")
+        console.log("Without using call()")
+        console.log("-------------------------")
+        let course={
+            id:101,
+            name:"java",
+            showData:function(){
+                        console.log(`ID is ${this.id}, NAME is ${this.name}`)
+            }
+        }
+        let employee={
+            id:201,
+            name:"ram",
+            showData:function(){
+                        console.log(`ID is ${this.id}, NAME is ${this.name}`)
+            }
+        }
+        let student={
+            id:301,
+            name:"raju",
+            showData:function(){
+                        console.log(`ID is ${this.id}, NAME is ${this.name}`)
+            }
+        }
+        course.showData()
+        employee.showData()
+        student.showData()
+
+        // WITH USING CALL()
+        console.log("-------------------------")
+        console.log("With using call()")
+        console.log("-------------------------")
+        let showData=function(){
+                        console.log(`ID is ${this.id}, NAME is ${this.name}`)
+                        }
+        let course1={
+            id:101,
+            name:"java",
+            
+        }
+        let employee1={
+            id:201,
+            name:"ram",
+            
+        }
+        let student1={
+            id:301,
+            name:"raju",
+            
+        }
+        showData.call(course1)
+        showData.call(employee1)
+        showData.call(student1)
+    </script>
+</body>
+</html>

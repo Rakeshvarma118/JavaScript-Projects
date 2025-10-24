@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apply function in javascript</title>
+</head>
+<body>
+    <script>
+        // If we want to display other values using call()
+        console.log("--------------Call()--------------")
+        let showData=function(created,modified){
+                        console.log(`ID is ${this.id}, NAME is ${this.name}, CREATED DATE is ${created},MODIFIED DATE is ${modified}`)
+                        }
+        let course1={
+            id:101,
+            name:"java",
+            
+        }
+        let employee1={
+            id:201,
+            name:"ram",
+            
+        }
+        let student1={
+            id:301,
+            name:"raju",
+            
+        }
+        showData.call(course1,'10/10/2020','10/12/2021')
+        showData.call(employee1,'1/1/2020','10/12/2021')
+        showData.call(student1,'1/1/2020','10/12/2021')
+
+        // Apply()
+        // If we want to display other values using call()
+        console.log("--------------Apply()--------------")
+        let showData1=function(created,modified){
+                        console.log(`ID is ${this.id}, NAME is ${this.name}, CREATED DATE is ${created},MODIFIED DATE is ${modified}`)
+                        }
+        let course={
+            id:101,
+            name:"java",
+            
+        }
+        let employee={
+            id:201,
+            name:"ram",
+            
+        }
+        let student={
+            id:301,
+            name:"raju",
+            
+        }
+        showData1.apply(course,['10/10/2020','10/12/2021'])
+        showData1.call(employee,['1/1/2020','10/12/2021'])
+        showData1.call(student,['1/1/2020','10/12/2021'])
+    </script>
+</body>
+</html>
