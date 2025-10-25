@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Focus Related Events</title>
+    <script>
+        function fOne(){
+            let data=document.getElementById('i1').value
+            document.getElementById('i1').value=data.toLowerCase()
+        }
+        function fTwo(){
+            let data=document.getElementById('i2').value
+            document.getElementById('i2').value=data.toUpperCase()
+        }
+
+    </script>
+</head>
+<body>
+    Name: <input type="text" value="RAMU" onblur="fOne()" id="i1">
+    City: <input type="text" value="hyderabad" onfocus="fTwo()" id="i2">
+</body>
+</html>

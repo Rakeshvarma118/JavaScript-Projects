@@ -1,0 +1,25 @@
+* {
+    margin: 5px;
+    padding: 5px;
+}
+label {
+    background-color: black;
+    color: white;
+    padding: 3px;
+}
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: darkgreen;
+}
+th {
+    background-color: #333;
+    color: white;
+    padding: 8px;
+}

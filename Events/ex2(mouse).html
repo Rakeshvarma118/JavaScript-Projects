@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mouse Related Events onmouseenter and onmouseleave</title>
+    <script>
+        function fOne(){
+            document.getElementById('p1').innerHTML='Tadaan!, Hi Buddy'
+            document.getElementById('p1').style.backgroundColor='lightgreen'
+        }
+        function fTwo(){
+            document.getElementById('p1').innerHTML='Click here, you will get surprise'
+            document.getElementById('p1').style.backgroundColor='white'
+        }
+    </script>
+</head>
+<body>
+    <p id="p1" onmouseenter="fOne()" onmouseleave="fTwo()">Click here, you will get surprise</p>
+    <p>There is surprise here</p>
+    <script>
+
+    </script>
+</body>
+</html>

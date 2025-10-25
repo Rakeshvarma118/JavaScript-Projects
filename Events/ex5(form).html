@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form related events onsubmit and onreset</title>
+    <script>
+        function fOne(){
+            let studentName=document.getElementById('id1').value
+            if(studentName===""){
+               // alert("Name should not be empty")
+                document.getElementById('span1').innerHTML='* Please enter valid name'
+                return false
+            }
+            else{
+                alert(`Your name is:  ${studentName}`)
+                return true
+            }
+        }
+        function fTwo(){
+            document.getElementById('id1').value=''
+        }
+    </script>
+</head>
+<body>
+    <form action="serpage1" onsubmit="return fOne()" onreset="fTwo()">
+        <input type="text"  name="StudentName" id="id1"><span id="span1" style="color:red">*</span> <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>

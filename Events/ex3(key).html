@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Related Events onkeyup</title>
+    <script>
+        function fOne(){
+            let data=document.getElementById('i1').value
+            document.getElementById('span1').innerHTML=data
+        }
+    </script>
+</head>
+<body>
+    <input type="search" placeholder="Type Your Query Here" onkeyup="fOne()" id="i1">
+    <p>Your Query is: <span id="span1"></span></p>
+</body>
+</html>

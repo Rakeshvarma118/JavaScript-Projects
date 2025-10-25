@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Methods</title>
+</head>
+<body>
+    <h1 id="id1">Welcome to HTML Example</h1>
+    <h1 class="c1">Here is the description of HTML</h1>
+    <h1 class="c1">Thank You</h1>
+    <input type="text" value="Hyderabad" name="city">Hyderabad
+    <input type="number" value="505001" name="pin">505001
+
+    <script>
+    //1. getElementById()    
+        document.getElementById('id1').innerHTML='Welcome to DOM Example'   // HTML manipulation
+        document.getElementById('id1').style.backgroundColor='silver'       // CSS manipulation
+
+    //2. getElementByTagName()
+        let tagName=document.getElementsByTagName('h1')            // here tagName stores array of values
+        tagName[1].innerHTML='Here is the description of DOM'       
+
+    //3. getElementsByClassName()
+        let className=document.getElementsByClassName('c1')        // here className stores array of values
+        className[0].innerHTML='Hello'
+
+    //4. getElementsByName()
+        let name1=document.getElementsByName('city')
+        name1[0].value='Secundrabad'
+    </script>
+</body>
+</html>

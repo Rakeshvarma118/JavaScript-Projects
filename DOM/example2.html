@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model example1</title>
+</head>
+<body>
+
+    <!--DOM Manipulation done by using id
+        1. html manipulation
+        2. css manipulation
+    
+    -->
+
+    <div>
+        <b id="b1">Courses:</b>
+        <ol>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+        </ol>
+    </div>
+    <div>
+        <b id="b2">Branches:</b>
+        <ol>
+            <li>Sr Nagar</li>
+            <li>Ameerpet</li>
+        </ol>
+    </div>
+    <input type="text" value="Hyderabad" id="input1">
+    <br>
+    <input type="text" value="Institute" id="input2">
+    <br>
+    <input type="number" value="100" id="num1">
+    <input type="number" value="200" id="num2">
+    <span id="span1">***</span>
+
+    <!--JavaScript code starts-->
+    <script>
+        /*  Note:
+                1.Use 'innerHtml' for paired tags like p,h1,li,ol,...
+                2.USe 'value' for input tag
+        
+        */
+       document.getElementById('b1').innerHTML="Subjects"
+       document.getElementById('input1').innerHTML="Secundrabad"
+
+       let firstNumber=document.getElementById('num1').value
+       let secondNumber=document.getElementById('num2').value
+       let result=eval(firstNumber)+ eval(secondNumber)
+
+       document.getElementById('span1').innerHTML=`= ${result}`
+
+    </script>
+</body>
+</html>

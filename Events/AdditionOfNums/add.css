@@ -1,0 +1,12 @@
+*{
+    margin:5px;
+    padding:5px;
+}
+label{
+    background-color:black;
+    color:white;
+}
+button{
+    background-color: green;
+    color:white
+}
