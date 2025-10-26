@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Validation</title>
+    <script>
+        function validateCheck(){
+            if(document.getElementById('r1').checked==false && document.getElementById('r2').checked==false && document.getElementById('r3').checked==false){
+                alert("Please select languages")
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="abc.jsp" onsubmit="return validateCheck()">
+        <label for="">Known Languages : </label>
+        <input type="checkbox" value="telugu" id="r1" name="language">Telugu
+        <input type="checkbox" value="hindi" id="r2" name="language">Hindi
+        <input type="checkbox" value="english" id="r3" name="language">English
+        <br>
+        <input type="submit" value="Validate">
+    </form>
+</body>
+</html>

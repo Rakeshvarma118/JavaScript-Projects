@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Validation</title>
+    <script>
+        function validateDrop(){
+            if(document.getElementById('s1').selectedIndex==0){
+                alert("Please select languages")
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="abc.jsp" onsubmit="return validateDrop()">
+        <label for="">Country : </label>
+        <select name="country" id="s1">
+            <option value="select Country">Select Country</option>
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <option value="china">China</option>
+        </select>
+        <br>
+        <input type="submit" value="Validate">
+    </form>
+</body>
+</html>

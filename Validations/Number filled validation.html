@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number filled Validation </title>
+    <script>
+        function validateAge(){
+            var num=document.getElementById("i1").Value
+            if(num==''){
+                document.getElementById('sp1').innerHtml="Age should not be empty"
+                return false
+            }else if(isNaN(num)){
+                document.getElementById('sp1').innerHTML="Enter numeric value only"
+                return false
+            }else if(num<0){
+                document.getElementById('sp1').innerHTML="Age should be a positive number"
+                return false
+            } else if(num>100){
+                document.getElementById('sp1').innerHTML="Age should be less than or equal to 100"
+                return false
+            }else
+                return true
+
+
+        }
+    </script>
+</head>
+<body>
+    <form action="abc.jsp" onsubmit="return validateAge()">
+        Age: <input type="number" id="i1" name="age">
+        <span id="sp1" style="color:red"></span><br>
+        <input type="submit" value="Validate">
+    </form>
+</body>
+</html>

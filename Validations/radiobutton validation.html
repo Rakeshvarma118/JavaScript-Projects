@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Validation</title>
+    <script>
+        function validateRadio(){
+            if(document.getElementById('r1').checked==false && document.getElementById('r2').checked==false && document.getElementById('r3').checked==false){
+                alert("Please select gender")
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="abc.jsp" onsubmit="return validateRadio()">
+        <label for="">Gender: </label>
+        <input type="radio" value="male" id="r1" name="gender">Male
+        <input type="radio" value="female" id="r2" name="gender">Female
+        <input type="radio" value="others" id="r3" name="gender">Others
+        <br>
+        <input type="submit" value="Validate">
+    </form>
+</body>
+</html>

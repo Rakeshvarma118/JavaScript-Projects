@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Field Validation</title>
+    <script>
+        function validateForm(){
+            let name=document.getElementById('i1').value
+            if(name===""){
+                alert("Name can't be empty")
+                return false
+            }else if(name.length<6 || name.length>15){
+                alert("Name must have 6 to 15 letters")
+                return false
+            }else 
+                return true
+        }
+    </script>
+</head>
+<body>
+    <form action="abc.jsp" onsubmit="return validateForm()">
+        Name: <input type="text" id="i1" name="personName">
+        <input type="submit" value="Validate">
+    </form>
+</body>
+</html>
