@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Handling Exception Example2</title>
+    <script>
+        function checkAge(){
+            let personAge=document.getElementById('age').value
+            try{
+                if(personAge===""){
+                    throw new Error("Age must not be a blank")
+                }
+                if(personAge>100){
+                    throw new Error("Age must be below 100")
+                }
+                if(personAge<0){
+                    throw new Error("Age should be a positive number")
+                }
+                if(isNaN(personAge)){
+                    throw new Error("Age should be a Numeric number")
+                }
+                if(personAge>18){
+                alert('Valid!')
+            }else{
+                alert('Invalid!')
+            }
+
+            }catch(exception){
+                document.getElementById('span1').innerHTML=exception.message
+            }finally{
+                console.log("END")
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter Your Age: <input type="text" id="age"><br><br>
+    <button onclick="checkAge()">Validate Age</button> <br><br>
+    <span style="color:red" id="span1"></span>
+</body>
+</html>

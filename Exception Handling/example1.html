@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Without Handling Exception Example1</title>
+    <script>
+        function checkAge(){
+            let personAge=document.getElementById('age').value
+            if(personAge>18){
+                alert('Valid!')
+            }else{
+                alert('Invalid!')
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter Your Age: <input type="text" id="age"><br><br>
+    <button onclick="checkAge()">Validate Age</button> 
+</body>
+</html>
