@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer functions -setInterval</title>
+</head>
+<body><span id="sp1"></span>
+    <script>
+
+        // setTimeout()=(arg1,arg2) ---> arg1 is callback function definition and arg2 is time in milliseconds(1sec=1000milliseconds)
+        // callback function called by given time interval repeatedly.
+           //setInterval(()=>console.log('Action1'), 1*1000)
+
+        
+        setInterval(()=>{
+            let todayDate=new Date()
+            document.getElementById('sp1').innerHTML=todayDate
+        }, 1000)
+    
+    </script>
+</body>
+</html>
